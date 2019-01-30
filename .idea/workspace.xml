@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66e15898-8219-44f6-905f-0c7457c8cedd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brite_erp/pages/DiscussPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brite_erp/pages/DiscussPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brite_erp/tests/smoke_tests/discuss/AddPrivateChannels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brite_erp/tests/smoke_tests/discuss/AddPrivateChannels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brite_erp/tests/smoke_tests/login/PositiveLogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brite_erp/tests/smoke_tests/login/PositiveLogInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brite_erp/utilities/ApplicationConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brite_erp/utilities/ApplicationConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Online_29.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brite_erp/tests/smoke_tests/login/PositiveLogInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brite_erp/tests/smoke_tests/login/PositiveLogInTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brite_erp/utilities/ApplicationConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brite_erp/utilities/ApplicationConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brite_erp/utilities/Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brite_erp/utilities/Pages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/brite_erp/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/brite_erp/utilities/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test_runner.xml" afterDir="false" />
-    </list>
+    <list default="true" id="66e15898-8219-44f6-905f-0c7457c8cedd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +83,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/brite_erp/tests/smoke_tests/discuss/AddPrivateChannels.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="332">
               <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,6 +156,7 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <showMembers ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -268,7 +254,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548880650495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548881453541" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -390,6 +376,14 @@
       <option name="presentableId" value="Default" />
       <updated>1548819336024</updated>
     </task>
+    <task id="LOCAL-00001" summary="Private Channel Creation Test">
+      <created>1548880796216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548880796216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -441,9 +435,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32906976" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32906976" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32906976" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -454,6 +448,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Private Channel Creation Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Private Channel Creation Test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/brite_erp/utilities/Driver.java">
@@ -586,7 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/brite_erp/tests/smoke_tests/discuss/AddPrivateChannels.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="332">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
