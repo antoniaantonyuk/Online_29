@@ -3,11 +3,13 @@ package com.brite_erp.utilities;
 import com.brite_erp.pages.ChooseERP;
 import com.brite_erp.pages.DiscussPage;
 import com.brite_erp.pages.LoginPage;
+import com.brite_erp.pages.PurchasesMain;
 
 public class Pages {
     private LoginPage loginPage;
     private ChooseERP chooseERP;
     private DiscussPage discussPage;
+    private PurchasesMain purchasesMain;
 
     public LoginPage login() {
         if (loginPage == null) {
@@ -27,5 +29,11 @@ public class Pages {
             discussPage = new DiscussPage();
         }
         return discussPage;
+    }
+    public PurchasesMain purchasesMain() {
+        if (purchasesMain == null) {
+            purchasesMain = new PurchasesMain();
+        }
+        return purchasesMain;
     }
 }

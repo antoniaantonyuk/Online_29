@@ -23,6 +23,6 @@ public class PositiveLogInTest extends TestBase {
         assertEquals(driver.getTitle(),
                 ApplicationConstants.APPLICATION_TITLE);
 
-        extentLogger.pass("Passed: Cart Icon Delete Test");
+        extentLogger.pass("Passed: Login to application");
     }
 }
