@@ -1,0 +1,37 @@
+package com.brite_erp.pages;
+
+import com.brite_erp.utilities.ConfigurationReader;
+import com.brite_erp.utilities.Driver;
+import com.brite_erp.utilities.TestBase;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage extends TestBase {
+    public LoginPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    @FindBy(id="login")
+    public WebElement username;
+
+    @FindBy(id="password")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement loginButton;
+
+    public void login(String usr, String pass){
+        username.sendKeys(usr);
+        password.sendKeys(pass);
+        //String BriteErpDepo=Driver.getDriver().findElement(By.id("db")).;
+        loginButton.click();
+    }
+
+    public void open() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+
+    }
+
+}

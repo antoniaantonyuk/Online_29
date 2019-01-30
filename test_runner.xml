@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Online-29 Brite-ERP" verbose="2">
+    <test name="Online-29 Brite-ERP Automated Smoke Tests">
+        <packages>
+            <package name="com.brite_erp.tests.smoke_tests"/>
+        </packages>
+    </test>
+</suite>
