@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.brite_erp.utilities.ApplicationConstants.NEW_CHANNEL;
 
-public class DiscussPage {
+public class DiscussPage extends Menu {
     public DiscussPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -25,8 +25,7 @@ public class DiscussPage {
     @FindBy(partialLinkText = NEW_CHANNEL)
     public  WebElement privateChannelNameNew;
 
-    @FindBy(linkText = "Purchases")
-    public WebElement purchaseInMenu;
+
 
 
 
