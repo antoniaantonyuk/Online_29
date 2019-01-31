@@ -1,16 +1,13 @@
 package com.brite_erp.utilities;
 
-import com.brite_erp.pages.ChooseERP;
-import com.brite_erp.pages.DiscussPage;
-import com.brite_erp.pages.LoginPage;
-import com.brite_erp.pages.PurchasesMain;
+import com.brite_erp.pages.*;
 
 public class Pages {
     private LoginPage loginPage;
     private ChooseERP chooseERP;
     private DiscussPage discussPage;
     private PurchasesMain purchasesMain;
-
+private QuotationRequest quotationRequest;
     public LoginPage login() {
         if (loginPage == null) {
             loginPage = new LoginPage();
@@ -36,4 +33,11 @@ public class Pages {
         }
         return purchasesMain;
     }
+    public QuotationRequest quotationRequest() {
+        if (quotationRequest == null) {
+            quotationRequest = new QuotationRequest();
+        }
+        return quotationRequest;
+    }
+
 }

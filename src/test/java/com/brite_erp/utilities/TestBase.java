@@ -75,16 +75,6 @@ public abstract class TestBase {
 //        htmlReporter.config().setTheme(Theme.DARK);
 
     }
-
-
-
-
-
-
-
-
-
-
     @AfterTest
     public void tearDownTest() {
         report.flush();
