@@ -8,6 +8,15 @@ public class Pages {
     private DiscussPage discussPage;
     private PurchasesMain purchasesMain;
 private QuotationRequest quotationRequest;
+private BrowserUtils browserUtils;
+
+public BrowserUtils browserUtils()
+{
+    if (browserUtils==null)
+        browserUtils=new BrowserUtils();
+
+    return browserUtils;
+}
     public LoginPage login() {
         if (loginPage == null) {
             loginPage = new LoginPage();
