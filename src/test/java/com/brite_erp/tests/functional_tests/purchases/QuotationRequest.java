@@ -1,4 +1,4 @@
-package com.brite_erp.tests.smoke_tests.purchase;
+package com.brite_erp.tests.functional_tests.purchases;
 
 import com.brite_erp.utilities.ConfigurationReader;
 import com.brite_erp.utilities.Driver;
