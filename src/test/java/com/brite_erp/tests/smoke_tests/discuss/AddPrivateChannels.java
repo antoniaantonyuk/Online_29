@@ -25,15 +25,15 @@ public class AddPrivateChannels extends TestBase {
         pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
         extentLogger = report.createTest("Click on plus button to add new Private Channel");
         extentLogger.info("Create new Channel");
-        //pages.discussPage().addPrivateChannelPlusButton.click();
+        pages.discussPage().addPrivateChannelPlusButton.click();
 
         extentLogger.info("Write the  Channel Name");
-        //pages.discussPage().privateChannelCreatorBar.sendKeys(NEW_CHANNEL+ Keys.ENTER);
+        pages.discussPage().privateChannelCreatorBar.sendKeys(NEW_CHANNEL+ Keys.ENTER);
         Thread.sleep(10000);
 
 
         extentLogger.info("Verify that new Channel Name is displayed on the page");
-        //Assert.assertTrue(pages.discussPage().privateChannelNameNew.isDisplayed());
+        Assert.assertTrue(pages.discussPage().privateChannelNameNew.isDisplayed());
 
         extentLogger.pass("Passed: New Channel Name created");
 

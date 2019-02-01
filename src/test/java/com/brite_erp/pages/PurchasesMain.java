@@ -14,4 +14,6 @@ public class PurchasesMain extends Menu {
 
     @FindBy(xpath = "(//li[@class='active'])[3]")
     public WebElement titlePurchasePage;
+
+
 }
