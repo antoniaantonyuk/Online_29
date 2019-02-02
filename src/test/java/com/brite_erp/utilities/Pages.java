@@ -7,6 +7,8 @@ public class Pages {
     private ChooseERP chooseERP;
     private DiscussPage discussPage;
     private PurchasesMain purchasesMain;
+    private CreateChannelPage createChannelPage;
+
 private QuotationRequest quotationRequest;
     public LoginPage login() {
         if (loginPage == null) {
@@ -20,6 +22,13 @@ private QuotationRequest quotationRequest;
             chooseERP = new ChooseERP();
         }
         return chooseERP;
+    }
+
+    public CreateChannelPage createChannelPage() {
+        if (createChannelPage == null) {
+            createChannelPage = new CreateChannelPage();
+        }
+        return createChannelPage;
     }
     public DiscussPage discussPage() {
         if (discussPage == null) {
