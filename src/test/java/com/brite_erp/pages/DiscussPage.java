@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.brite_erp.utilities.ApplicationConstants.NEW_CHANNEL;
 
-public class DiscussPage {
+public class DiscussPage extends Menu {
     public DiscussPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -24,6 +24,32 @@ public class DiscussPage {
 
     @FindBy(partialLinkText = NEW_CHANNEL)
     public  WebElement privateChannelNameNew;
+
+    @FindBy(xpath = "//span[@title='Leave this channel']")
+    public WebElement deletePrivateChannelXButton;
+
+    @FindBy(xpath = "//button[@title='Invite people']")
+    public WebElement clickInviteButton;
+
+    @FindBy(xpath = "(//input[@type='text'])[7]")
+    public WebElement selectUsersInDropDownMenu;
+
+    @FindBy(id = "o_chat_fileupload3")
+    public WebElement iframeInInvitationWindow;
+
+    @FindBy(xpath= "//button[@class='btn btn-sm btn-primary']")
+    public WebElement inviteButtonInFrame;
+
+    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    public WebElement avatar;
+
+    @FindBy(xpath = "//*[@data-menu='logout']" )
+    public WebElement logOut;
+
+
+
+
+
 
 
 

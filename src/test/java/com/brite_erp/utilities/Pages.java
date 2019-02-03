@@ -1,14 +1,22 @@
 package com.brite_erp.utilities;
 
-import com.brite_erp.pages.ChooseERP;
-import com.brite_erp.pages.DiscussPage;
-import com.brite_erp.pages.LoginPage;
+import com.brite_erp.pages.*;
 
 public class Pages {
     private LoginPage loginPage;
     private ChooseERP chooseERP;
     private DiscussPage discussPage;
+    private PurchasesMain purchasesMain;
+private QuotationRequest quotationRequest;
+private BrowserUtils browserUtils;
 
+public BrowserUtils browserUtils()
+{
+    if (browserUtils==null)
+        browserUtils=new BrowserUtils();
+
+    return browserUtils;
+}
     public LoginPage login() {
         if (loginPage == null) {
             loginPage = new LoginPage();
@@ -28,4 +36,17 @@ public class Pages {
         }
         return discussPage;
     }
+    public PurchasesMain purchasesMain() {
+        if (purchasesMain == null) {
+            purchasesMain = new PurchasesMain();
+        }
+        return purchasesMain;
+    }
+    public QuotationRequest quotationRequest() {
+        if (quotationRequest == null) {
+            quotationRequest = new QuotationRequest();
+        }
+        return quotationRequest;
+    }
+
 }
