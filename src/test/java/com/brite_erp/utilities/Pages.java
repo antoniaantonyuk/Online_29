@@ -7,6 +7,8 @@ public class Pages {
     private ChooseERP chooseERP;
     private DiscussPage discussPage;
     private PurchasesMain purchasesMain;
+    private CreateChannelPage createChannelPage;
+
 private QuotationRequest quotationRequest;
 private BrowserUtils browserUtils;
 
@@ -29,6 +31,13 @@ public BrowserUtils browserUtils()
             chooseERP = new ChooseERP();
         }
         return chooseERP;
+    }
+
+    public CreateChannelPage createChannelPage() {
+        if (createChannelPage == null) {
+            createChannelPage = new CreateChannelPage();
+        }
+        return createChannelPage;
     }
     public DiscussPage discussPage() {
         if (discussPage == null) {
