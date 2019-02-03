@@ -11,4 +11,7 @@ public abstract class Menu {
     }
     @FindBy(linkText = "Purchases")
     public WebElement purchaseInMenu;
+
+    @FindBy(linkText = "Discuss")
+    public WebElement discussInMenu;
 }

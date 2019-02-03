@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Online-29 Brite-ERP" duration-ms="82826" started-at="2019-02-01T17:53:33Z" finished-at="2019-02-01T17:54:56Z">
+    <groups>
+    </groups>
+    <test name="Online-29 Brite-ERP Automated Smoke Tests" duration-ms="82826" started-at="2019-02-01T17:53:33Z" finished-at="2019-02-01T17:54:56Z">
+      <class name="com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="setUpTest" is-config="true" duration-ms="98" started-at="2019-02-01T17:53:33Z" finished-at="2019-02-01T17:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setupMethod()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="setupMethod" is-config="true" duration-ms="3988" started-at="2019-02-01T17:53:33Z" finished-at="2019-02-01T17:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="CheckTitle()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="CheckTitle" duration-ms="18346" started-at="2019-02-01T17:53:37Z" finished-at="2019-02-01T17:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTitle -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="tearDownMethod" is-config="true" duration-ms="84" started-at="2019-02-01T17:53:56Z" finished-at="2019-02-01T17:53:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckTitle status=SUCCESS method=PageHeaderTest.CheckTitle()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="setupMethod()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="setupMethod" is-config="true" duration-ms="2892" started-at="2019-02-01T17:53:56Z" finished-at="2019-02-01T17:53:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="Purchase_Orders_Title()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="Purchase_Orders_Title" duration-ms="14935" started-at="2019-02-01T17:53:59Z" finished-at="2019-02-01T17:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Purchase_Orders_Title -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="tearDownMethod" is-config="true" duration-ms="81" started-at="2019-02-01T17:54:14Z" finished-at="2019-02-01T17:54:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Purchase_Orders_Title status=SUCCESS method=PageHeaderTest.Purchase_Orders_Title()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest@6537cf78]" name="tearDownTest" is-config="true" duration-ms="219" started-at="2019-02-01T17:54:56Z" finished-at="2019-02-01T17:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.brite_erp.tests.smoke_tests.purchase.PageHeaderTest -->
+      <class name="com.brite_erp.tests.smoke_tests.login.PositiveLogInTest">
+        <test-method status="PASS" signature="setupMethod()[pri:0, instance:com.brite_erp.tests.smoke_tests.login.PositiveLogInTest@34b7bfc0]" name="setupMethod" is-config="true" duration-ms="2632" started-at="2019-02-01T17:54:37Z" finished-at="2019-02-01T17:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="positiveLoginTest()[pri:0, instance:com.brite_erp.tests.smoke_tests.login.PositiveLogInTest@34b7bfc0]" name="positiveLoginTest" duration-ms="15805" started-at="2019-02-01T17:54:40Z" finished-at="2019-02-01T17:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positiveLoginTest -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.brite_erp.tests.smoke_tests.login.PositiveLogInTest@34b7bfc0]" name="tearDownMethod" is-config="true" duration-ms="81" started-at="2019-02-01T17:54:56Z" finished-at="2019-02-01T17:54:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=positiveLoginTest status=SUCCESS method=PositiveLogInTest.positiveLoginTest()[pri:0, instance:com.brite_erp.tests.smoke_tests.login.PositiveLogInTest@34b7bfc0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.brite_erp.tests.smoke_tests.login.PositiveLogInTest -->
+      <class name="com.brite_erp.tests.smoke_tests.discuss.AddPrivateChannels">
+        <test-method status="PASS" signature="setupMethod()[pri:0, instance:com.brite_erp.tests.smoke_tests.discuss.AddPrivateChannels@67b6d4ae]" name="setupMethod" is-config="true" duration-ms="3993" started-at="2019-02-01T17:54:14Z" finished-at="2019-02-01T17:54:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="checkPrivateChannel()[pri:0, instance:com.brite_erp.tests.smoke_tests.discuss.AddPrivateChannels@67b6d4ae]" name="checkPrivateChannel" duration-ms="19577" started-at="2019-02-01T17:54:18Z" finished-at="2019-02-01T17:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPrivateChannel -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.brite_erp.tests.smoke_tests.discuss.AddPrivateChannels@67b6d4ae]" name="tearDownMethod" is-config="true" duration-ms="81" started-at="2019-02-01T17:54:37Z" finished-at="2019-02-01T17:54:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkPrivateChannel status=SUCCESS method=AddPrivateChannels.checkPrivateChannel()[pri:0, instance:com.brite_erp.tests.smoke_tests.discuss.AddPrivateChannels@67b6d4ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- com.brite_erp.tests.smoke_tests.discuss.AddPrivateChannels -->
+    </test> <!-- Online-29 Brite-ERP Automated Smoke Tests -->
+  </suite> <!-- Online-29 Brite-ERP -->
+</testng-results>

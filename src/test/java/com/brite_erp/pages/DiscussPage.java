@@ -4,7 +4,6 @@ import com.brite_erp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.brite_erp.utilities.ApplicationConstants.NEW_CHANNEL;
 
@@ -24,6 +23,41 @@ public class DiscussPage extends Menu {
 
     @FindBy(partialLinkText = NEW_CHANNEL)
     public  WebElement privateChannelNameNew;
+
+    @FindBy(xpath = "//span[@title='Leave this channel']")
+    public WebElement deletePrivateChannelXButton;
+
+    @FindBy(xpath = "//button[@title='Invite people']")
+    public WebElement clickInviteButton;
+
+    @FindBy(xpath = "(//input[@type='text'])[7]")
+    public WebElement selectUsersInDropDownMenu;
+
+    @FindBy(id = "o_chat_fileupload3")
+    public WebElement iframeInInvitationWindow;
+
+    @FindBy(xpath= "//button[@class='btn btn-sm btn-primary']")
+    public WebElement inviteButtonInFrame;
+
+    @FindBy(xpath= "//*[@class='oe_topbar_name']")
+    public WebElement avatar;
+
+    @FindBy(xpath= "//a[contains(test(),'Log out')]")
+    public WebElement logOut;
+
+    @FindBy(xpath = "//div[@class='o_mail_chat_sidebar']//i[@class='fa fa-inbox mr8']")
+    public WebElement inboxLink;
+
+    @FindBy( xpath= "(//li[@class='active'])[2]")
+    public WebElement InboxTitle;
+
+    @FindBy( xpath = "//h4[@class='o_mail_open_channels']" )
+    public WebElement channelsLink;
+
+    @FindBy (xpath = "//div[@class='oe_module_vignette oe_kanban_global_click o_kanban_record']")
+    public WebElement generalChannelBlock;
+
+
 
 
 

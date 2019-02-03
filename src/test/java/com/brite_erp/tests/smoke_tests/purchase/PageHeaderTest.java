@@ -7,10 +7,6 @@ import com.brite_erp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
-import static org.testng.Assert.assertEquals;
-
 public class PageHeaderTest extends TestBase {
 
     @Test
@@ -19,7 +15,8 @@ public class PageHeaderTest extends TestBase {
         pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
-        pages.purchasesMain().purchaseInMenu.click();
+
+        pages.discussPage().purchaseInMenu.click();
         Thread.sleep(3000);
         extentLogger.info("Verify Purchases page Title");
 
@@ -36,7 +33,7 @@ public class PageHeaderTest extends TestBase {
         pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
-        pages.purchasesMain().purchaseInMenu.click();
+        pages.discussPage().purchaseInMenu.click();
         Thread.sleep(3000);
         pages.purchasesMain().titlePurchaseOrders.click();
         extentLogger.info("Verify Purchase Orders Page Title");
