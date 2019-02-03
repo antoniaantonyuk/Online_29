@@ -39,12 +39,23 @@ public class DiscussPage extends Menu {
     @FindBy(xpath= "//button[@class='btn btn-sm btn-primary']")
     public WebElement inviteButtonInFrame;
 
-    @FindBy(linkText = "//*[@class='nav navbar-nav navbar-right oe_user_menu_placeholder']")
+    @FindBy(xpath= "//*[@class='oe_topbar_name']")
     public WebElement avatar;
 
-    @FindBy(linkText = "Log out" )
+    @FindBy(xpath= "//a[contains(test(),'Log out')]")
     public WebElement logOut;
 
+    @FindBy(xpath = "//div[@class='o_mail_chat_sidebar']//i[@class='fa fa-inbox mr8']")
+    public WebElement inboxLink;
+
+    @FindBy( xpath= "(//li[@class='active'])[2]")
+    public WebElement InboxTitle;
+
+    @FindBy( xpath = "//h4[@class='o_mail_open_channels']" )
+    public WebElement channelsLink;
+
+    @FindBy (xpath = "//div[@class='oe_module_vignette oe_kanban_global_click o_kanban_record']")
+    public WebElement generalChannelBlock;
 
 
 

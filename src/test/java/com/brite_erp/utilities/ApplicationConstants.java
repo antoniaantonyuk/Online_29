@@ -23,5 +23,8 @@ public class ApplicationConstants {
 
     public static final String WRONG_CREDENTIALS_ALERT = "Wrong login/password";
 
+    public static final String INBOX_TITLE= "#Inbox - Odoo";
+    public static final String CHANNELS_TITLE= "Public Channels - Odoo";
+
 
 }
