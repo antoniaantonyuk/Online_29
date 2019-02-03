@@ -6,12 +6,21 @@ public class ApplicationConstants {
 
     public  static  final String NEW_CHANNEL = "new";
 
-    public  static  final String NEW_CHANNEL_FOR_INVITATION = "Invitation_Test";
-
-
     public static final String PURCHASES_TITLE = "Requests for Quotation - Odoo";
 
     public static final String PURCHASES_ORDERS_TITLE = "Purchase Orders - Odoo";
+
+    public static final String VENDORS_TITLE = "Vendors - Odoo";
+
+    public static final String PRODUCTS_TITLE = "Products - Odoo";
+
+    public static final String INCOMING_PRODUCTS_TITLE = "Incoming Products - Odoo";
+
+    public static final String VENDOR_BILLS_TITLE = "Vendor Bills - Odoo";
+
+    public static final String REPORTING_TITLE = "Purchase Analysis - Odoo";
+
+    public static final String WRONG_CREDENTIALS_ALERT = "Wrong login/password";
 
 
 }

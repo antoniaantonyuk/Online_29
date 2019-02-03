@@ -18,4 +18,21 @@ public class PurchasesMain extends Menu {
     @FindBy(xpath = "//a[@data-menu='519']")
     public WebElement titlePurchaseOrders;
 
+    @FindBy(xpath = "//a[@data-menu='506']")
+    public WebElement titleVendors;
+
+    @FindBy(xpath = "//a[@data-menu='516']")
+    public WebElement titleProducts;
+
+    @FindBy(xpath = "//a[@data-menu='514']")
+    public WebElement titleIncomingProducts;
+
+    @FindBy(xpath = "//a[@data-menu='515']")
+    public WebElement titleVendorBills;
+
+    @FindBy(xpath = "//a[@data-menu='521']")
+    public WebElement titleReporting;
+
+    @FindBy(xpath = "//p[@class='alert alert-danger']")
+    public WebElement WrongCredentialsAlert;
 }
