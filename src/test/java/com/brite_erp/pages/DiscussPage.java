@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static com.brite_erp.utilities.ApplicationConstants.NEW_CHANNEL;
+import javax.print.attribute.standard.MediaSize;
+
+import static com.brite_erp.utilities.ApplicationConstants.*;
 
 public class DiscussPage extends Menu {
     public DiscussPage() {
@@ -56,6 +58,23 @@ public class DiscussPage extends Menu {
 
     @FindBy (xpath = "//div[@class='oe_module_vignette oe_kanban_global_click o_kanban_record']")
     public WebElement generalChannelBlock;
+
+    @FindBy(xpath = "(//span[@title='Add'])[2]")
+    public WebElement addDirectMessagePlusButton;
+
+    @FindBy(xpath = "//input[@placeholder='User name']" )
+    public  WebElement AddOtherUserNameBar;
+
+    @FindBy(id="ui-id-15")
+    public WebElement selectOtherUserInDropDownMenu;
+
+    @FindBy(partialLinkText = OTHER_USER)
+    public  WebElement OtherUserName;
+
+    @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li/a")
+    public WebElement deleteOtherUserNameXButton;
+
+
 
 
 
