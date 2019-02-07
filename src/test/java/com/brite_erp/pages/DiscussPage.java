@@ -4,9 +4,9 @@ import com.brite_erp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.brite_erp.utilities.ApplicationConstants.NEW_CHANNEL;
+import static com.brite_erp.utilities.ApplicationConstants.NEW_CHANNEL_FOR_INVITATION;
 
 public class DiscussPage extends Menu {
     public DiscussPage() {
@@ -40,11 +40,29 @@ public class DiscussPage extends Menu {
     @FindBy(xpath= "//button[@class='btn btn-sm btn-primary']")
     public WebElement inviteButtonInFrame;
 
-    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    @FindBy(xpath= "//*[@class='oe_topbar_name']")
     public WebElement avatar;
 
-    @FindBy(xpath = "//*[@data-menu='logout']" )
+    @FindBy(xpath= "//a[@data-menu='logout']")
     public WebElement logOut;
+
+    @FindBy(xpath = "//div[@class='o_mail_chat_sidebar']//i[@class='fa fa-inbox mr8']")
+    public WebElement inboxLink;
+
+    @FindBy( xpath= "(//li[@class='active'])[2]")
+    public WebElement InboxTitle;
+
+    @FindBy( xpath = "//h4[@class='o_mail_open_channels']" )
+    public WebElement channelsLink;
+
+    @FindBy (xpath = "//div[@class='oe_module_vignette oe_kanban_global_click o_kanban_record']")
+    public WebElement generalChannelBlock;
+
+    @FindBy(xpath = "//*[@title='InvitationTest']")
+    public  WebElement privateChannelNameNewInvitation;
+
+    @FindBy(xpath = "//textarea[@class='o_input o_composer_text_field']")
+    public WebElement privateChannelMessageField;
 
 
 
