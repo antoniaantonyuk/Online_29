@@ -12,7 +12,7 @@ public class PurchasesMain extends Menu {
     }
 
 
-    @FindBy(xpath = "(//li[@class='active'])[3]")
+    @FindBy(xpath = "//a[@data-menu='504']")
     public WebElement titlePurchasePage;
 
     @FindBy(xpath = "//a[@data-menu='519']")

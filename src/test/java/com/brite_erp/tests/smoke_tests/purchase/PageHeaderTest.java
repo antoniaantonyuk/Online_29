@@ -56,7 +56,7 @@ public class PageHeaderTest extends TestBase {
         Thread.sleep(11000);
         pages.purchasesMain().titleVendors.click();
         extentLogger.info("Verify Vendors Page Title");
-        Thread.sleep(11000);
+        Thread.sleep(12000);
         Assert.assertEquals(Driver.getDriver().getTitle(), ApplicationConstants.VENDORS_TITLE);
         extentLogger.pass("Passed: Verification Title of Vendors Page");
     }
