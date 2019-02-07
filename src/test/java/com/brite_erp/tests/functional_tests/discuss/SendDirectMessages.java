@@ -1,9 +1,6 @@
 package com.brite_erp.tests.functional_tests.discuss;
 
-import com.brite_erp.utilities.ApplicationConstants;
-import com.brite_erp.utilities.ConfigurationReader;
-import com.brite_erp.utilities.Driver;
-import com.brite_erp.utilities.TestBase;
+import com.brite_erp.utilities.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -22,38 +19,36 @@ public class SendDirectMessages extends TestBase {
 
         extentLogger.info("Write the Other User's Name");
         pages.discussPage().AddOtherUserNameBar.sendKeys(ApplicationConstants.OTHER_USER );
-        Thread.sleep(1500);
+        BrowserUtils.waitForVisibility(pages.discussPage().selectOtherUserInDropDownMenu,5);
 
-        //check
         pages.discussPage().selectOtherUserInDropDownMenu.click();
 
-       // WebElement select= Driver.getDriver().findElement(By.id("ui-id-15"));
-      // Select(driver.findElement(By.id("payment_plan_id")));
-      // select.selectByIndex(1);
-
-
-        //Thread.sleep(1000);
-
-
         extentLogger.info("Verify that other user Name is displayed in the direct message list on the page");
+       // System.out.println(pages.discussPage().OtherUserName.isDisplayed());
         Assert.assertTrue(pages.discussPage().OtherUserName.isDisplayed());
         Thread.sleep(3000);
-
-
+       // driver.navigate().refresh();
         extentLogger.info("Delete other user name from direct message list");
-        pages.discussPage().deleteOtherUserNameXButton.click();
+      BrowserUtils.hover(Driver.getDriver().findElement(By.xpath("//i[@title='Offline']")));
 
+       BrowserUtils.waitForClickablility(pages.discussPage().deleteOtherUserNameXButton,10);
+  //      BrowserUtils.verifyElementDisplayed(pages.discussPage().deleteOtherUserNameXButton);
+       pages.discussPage().deleteOtherUserNameXButton.click();
         extentLogger.info("Refresh Page to avoid bug.");
-
-        driver.navigate().refresh();
-        Thread.sleep(10000);
+        Driver.getDriver().navigate().refresh();
+        //Thread.sleep(10000);
 
         extentLogger.info("deleted user name should not be displayed on the list");
-        Assert.assertFalse(pages.discussPage().OtherUserName.isDisplayed());
-        System.out.println("Fail is expected.");
+        try {
+            Assert.assertFalse(pages.discussPage().OtherUserName.isDisplayed(), "could not remove the user");
+        }
+        catch (Exception e)
+        {
+            System.out.println("Item is removed successfully");
+        }
 
-
-        extentLogger.pass("Passed: other user name added and deleted. ");
+       // System.out.println("Fail is expected.");
+     extentLogger.pass("Passed: other user name added and deleted. ");
 
     }
 

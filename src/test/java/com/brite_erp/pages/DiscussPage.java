@@ -65,13 +65,13 @@ public class DiscussPage extends Menu {
     @FindBy(xpath = "//input[@placeholder='User name']" )
     public  WebElement AddOtherUserNameBar;
 
-    @FindBy(id="ui-id-15")
+    @FindBy(xpath="(//ul[@id='ui-id-1']/li[1])")
     public WebElement selectOtherUserInDropDownMenu;
 
-    @FindBy(partialLinkText = OTHER_USER)
+    @FindBy(xpath = "//i[@title='Offline']")
     public  WebElement OtherUserName;
 
-    @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li/a")
+    @FindBy(xpath = "//span[@title='Leave this channel']")
     public WebElement deleteOtherUserNameXButton;
 
 
