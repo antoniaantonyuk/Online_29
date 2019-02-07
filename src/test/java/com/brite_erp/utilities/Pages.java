@@ -4,21 +4,23 @@ import com.brite_erp.pages.*;
 
 public class Pages {
     private LoginPage loginPage;
-    private ChooseERP chooseERP;
+    public ChooseERP chooseERP;
     private DiscussPage discussPage;
     private PurchasesMain purchasesMain;
     private CreateChannelPage createChannelPage;
 
-private QuotationRequest quotationRequest;
-private BrowserUtils browserUtils;
 
-public BrowserUtils browserUtils()
-{
-    if (browserUtils==null)
-        browserUtils=new BrowserUtils();
+    private QuotationRequest quotationRequest;
+    private BrowserUtils browserUtils;
 
-    return browserUtils;
-}
+
+    public BrowserUtils browserUtils() {
+        if (browserUtils == null)
+            browserUtils = new BrowserUtils();
+
+        return browserUtils;
+    }
+
     public LoginPage login() {
         if (loginPage == null) {
             loginPage = new LoginPage();
@@ -39,23 +41,29 @@ public BrowserUtils browserUtils()
         }
         return createChannelPage;
     }
+
     public DiscussPage discussPage() {
         if (discussPage == null) {
             discussPage = new DiscussPage();
         }
         return discussPage;
     }
+
     public PurchasesMain purchasesMain() {
         if (purchasesMain == null) {
             purchasesMain = new PurchasesMain();
         }
         return purchasesMain;
     }
+
     public QuotationRequest quotationRequest() {
         if (quotationRequest == null) {
             quotationRequest = new QuotationRequest();
         }
         return quotationRequest;
     }
+
+
+
 
 }

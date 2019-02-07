@@ -60,9 +60,8 @@ extentLogger.pass("Test is passed");
         Assert.assertEquals(quoteAmount,totalAmount);
         extentLogger.pass("Test is passed");
     }
-    @Test
-    public void printTest()
-    {
+        @Test
+        public void printTest(){
         extentLogger=report.createTest("Printing Test");
         SignIn();
         extentLogger.info("Sign in the account");
