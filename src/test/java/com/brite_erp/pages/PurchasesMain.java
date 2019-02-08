@@ -11,9 +11,6 @@ public class PurchasesMain extends Menu {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
-
-
     @FindBy(xpath = "(//li[@class='active'])[3]")
     public WebElement titlePurchasePage;
 
