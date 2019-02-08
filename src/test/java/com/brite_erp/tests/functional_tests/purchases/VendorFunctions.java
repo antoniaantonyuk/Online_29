@@ -2,6 +2,7 @@ package com.brite_erp.tests.functional_tests.purchases;
 
 
 
+import com.brite_erp.utilities.BrowserUtils;
 import com.brite_erp.utilities.TestBase;
 import com.github.javafaker.Faker;
 import org.testng.Assert;
@@ -11,6 +12,10 @@ public class VendorFunctions extends TestBase {
 
     @Test
     public void CreateNewVendorTest() throws InterruptedException {
+
+        Faker faker = new Faker();
+        String fakeVendor = faker.name().fullName();
+
         extentLogger = report.createTest("Create a new Vendor");//test case gibi
         pages.chooseERP().rightERP.click();
         //pages.login().login(ConfigurationReader.getProperty("username"),ConfigurationReader.getProperty("password"));
@@ -23,25 +28,24 @@ public class VendorFunctions extends TestBase {
         Thread.sleep(3000);
         pages.purchasesMain().titleVendors.click();
         extentLogger.info("Click on Vendor");
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         pages.vendors().createVendor.click();
         extentLogger.info("Create a vendor");
-        Thread.sleep(4000);
+        Thread.sleep(3000);
 
-        Faker faker = new Faker();
-        String fakeVendor = faker.name().fullName();
+        BrowserUtils.waitForVisibility(pages.vendors().newVendorName,4);
 
 
         pages.vendors().newVendorName.sendKeys(fakeVendor);
         extentLogger.info("New vendor");
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         pages.vendors().saveNewVendor.click();
         extentLogger.info("Successfully created new vendor");
-        Thread.sleep(4000);
+        Thread.sleep(3000);
 
-      //  String actualValue = fakeVendor;
-        //Assert.assertEquals(fakeVendor, actualValue);
+//        String actualValue = fakeVendor;
+//        Assert.assertEquals(fakeVendor, actualValue);
         pages.vendors().vendorNameCheck.click();
         extentLogger.info("Passed: Test finished");
     }
@@ -58,11 +62,18 @@ public class VendorFunctions extends TestBase {
         pages.purchasesMain().titlePurchasePage.click();
         extentLogger.info("Click on Purchase Order");
 
+        pages.purchasesMain().titleVendors.click();
+        extentLogger.info("Click on Vendor");
+        Thread.sleep(4000);
+
         pages.vendors().importVendor.click();
         extentLogger.info("Click on Import button");
 
+        BrowserUtils.verifyElementDisplayed(pages.vendors().loadFile);
+        String path= "/Macintosh HD/Users/oibek/Document/SalesTest.xlsx";
+        pages.vendors().loadFile.sendKeys(path);
 
-
+        extentLogger.info("Passed");
 
     }
     @Test
@@ -107,7 +118,7 @@ public class VendorFunctions extends TestBase {
 //        pages.chooseERP().rightERP.click();
 //        pages.login().login(ConfigurationReader.getProperty("username"),
 //                ConfigurationReader.getProperty("password"));
-//        pages.quotationRequest().PurchasesTab.click();//urchasesMain().titlePurchasePage.click();
+//        pages.quotationRequest().PurchasesTab.click();//PurchasesMain().titlePurchasePage.click();
 //    }
 //
 //    @Test
