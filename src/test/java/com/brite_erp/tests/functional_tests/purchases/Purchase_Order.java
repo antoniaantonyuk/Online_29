@@ -56,10 +56,12 @@ public class Purchase_Order extends TestBase {
         Thread.sleep(11000);
         pages.purchasesMain().IncomingProducts.click();
         Thread.sleep(11000);
+        pages.purchasesMain().searchButton.click();
+        Thread.sleep(2000);
         pages.purchasesMain().ButtonFilters.click();
-        Thread.sleep(7000);
+        Thread.sleep(2000);
         pages.purchasesMain().Today.click();
-        Thread.sleep(7000);
+        Thread.sleep(4000);
         extentLogger.info("Verify that a Alert");
         Assert.assertTrue(pages.purchasesMain().AlertRegister.getText().contains("Click to register a product receipt."));
         extentLogger.info("Test is done");

@@ -20,7 +20,10 @@ public class PurchasesMain extends Menu {
     @FindBy(xpath = "//a[@data-menu='514']")
     public WebElement IncomingProducts;
 
-    @FindBy(xpath = "//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle']")
+    @FindBy(xpath = "//span[contains(@title,'Advanced Search...')]")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[1]/div/span")
     public WebElement ButtonFilters;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/ul/li[5]")
