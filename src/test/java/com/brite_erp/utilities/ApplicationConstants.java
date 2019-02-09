@@ -28,6 +28,7 @@ public class ApplicationConstants {
 
     public static final String CHANNELS_TITLE= "Public Channels - Odoo";
 
+    public  static  final String OTHER_USER= "Demo User";
 
 
 
