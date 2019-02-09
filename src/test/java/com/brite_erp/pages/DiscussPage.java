@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
 import javax.print.attribute.standard.MediaSize;
-
 import static com.brite_erp.utilities.ApplicationConstants.*;
+
+
 
 public class DiscussPage extends Menu {
     public DiscussPage() {
@@ -47,7 +47,7 @@ public class DiscussPage extends Menu {
     @FindBy(xpath= "//*[@class='oe_topbar_name']")
     public WebElement avatar;
 
-    @FindBy(xpath= "//a[contains(test(),'Log out')]")
+    @FindBy(xpath= "//a[@data-menu='logout']")
     public WebElement logOut;
 
     @FindBy(xpath = "//div[@class='o_mail_chat_sidebar']//i[@class='fa fa-inbox mr8']")
@@ -61,7 +61,7 @@ public class DiscussPage extends Menu {
 
     @FindBy (xpath = "//div[@class='oe_module_vignette oe_kanban_global_click o_kanban_record']")
     public WebElement generalChannelBlock;
-
+  
     @FindBy(xpath = "(//span[@title='Add'])[2]")
     public WebElement addDirectMessagePlusButton;
 
@@ -110,6 +110,7 @@ public boolean isElementPreset() {
             return false;
         }
 }
+
 
 
 
