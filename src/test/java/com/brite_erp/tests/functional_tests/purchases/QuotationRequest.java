@@ -102,8 +102,18 @@ extentLogger.pass("Test is passed");
         extentLogger.info("Add a random fields to exporting file");
         pages.quotationRequest().exportToFile.click();
         extentLogger.info("Click on export to File option");
+        String path = "E:\\Downloads";
         //  extentLogger.fail("failed");
-       // Assert.assertTrue(pages.quotationRequest().printMessage.getText().contains("Successfully Printed"));
+        extentLogger.info("Check if the file is downloaded onto computer");
+        Assert.assertTrue(pages.quotationRequest().isFileDownloaded(path, "purchase.order"));
         extentLogger.info("Test is done");
+    }
+
+    @Test
+    public void downCheck() {
+
+        //pages.quotationRequest().isFileDownloaded(path,"ww.pdf");
+        System.out.println();
+
     }
 }
