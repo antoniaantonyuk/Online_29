@@ -29,6 +29,12 @@ public class LoginPage extends Menu {
         loginButton.click();
     }
 
+    public void login1(){
+        username.sendKeys(ConfigurationReader.getProperty("username"));
+        password.sendKeys(ConfigurationReader.getProperty("password"));
+        loginButton.click();
+    }
+
     public void open() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
