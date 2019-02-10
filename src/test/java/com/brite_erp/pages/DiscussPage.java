@@ -26,6 +26,12 @@ public class DiscussPage extends Menu {
     @FindBy(xpath = "//span[@class='o_channel_name']")
     public  WebElement privateChannelName;
 
+    @FindBy(xpath = "//*[@title='InvitationTest']")
+    public  WebElement privateChannelNameNewInvitation;
+
+    @FindBy(xpath = "//textarea[@class='o_input o_composer_text_field']")
+    public WebElement privateChannelMessageField;
+
     @FindBy(partialLinkText = NEW_CHANNEL)
     public  WebElement privateChannelNameNew;
 

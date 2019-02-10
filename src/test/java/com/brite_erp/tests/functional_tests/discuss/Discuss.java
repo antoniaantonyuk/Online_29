@@ -10,7 +10,7 @@ public class Discuss extends TestBase{
     @Test
     public void checkCreateChannel() throws Exception{
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         pages.createChannelPage().channelTab.click();
         Thread.sleep(3000);
         pages.createChannelPage().createBtn.click();

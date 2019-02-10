@@ -12,7 +12,7 @@ public class PageHeaderTest extends TestBase {
     @Test
     public void CheckTitle() throws InterruptedException {
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
 
@@ -30,7 +30,7 @@ public class PageHeaderTest extends TestBase {
     public void Purchase_Orders_Title() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.discussPage().purchaseInMenu.click();
@@ -49,7 +49,7 @@ public class PageHeaderTest extends TestBase {
     public void Vendors_Title() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();
@@ -64,7 +64,7 @@ public class PageHeaderTest extends TestBase {
     public void Products_Title() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();
@@ -79,7 +79,7 @@ public class PageHeaderTest extends TestBase {
     public void IncomingProducts_Title() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();
@@ -95,7 +95,7 @@ public class PageHeaderTest extends TestBase {
     public void VendorBills_Title() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();
@@ -111,7 +111,8 @@ public class PageHeaderTest extends TestBase {
     public void Reporting_Title() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();

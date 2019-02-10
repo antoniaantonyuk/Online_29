@@ -18,7 +18,9 @@ public class NegativeLoginTest extends TestBase {
         extentLogger.info("Login to application");
         pages.chooseERP().rightERP.click();
         Thread.sleep(4000);
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("wrongpassword"));
+        pages.login().username.sendKeys(ConfigurationReader.getProperty("username"));
+        pages.login().password.sendKeys("wrong");
+
         extentLogger.info("Verifying alert");
         Thread.sleep(6000);
         String alert1= pages.purchasesMain().WrongCredentialsAlert.getText();
@@ -34,7 +36,8 @@ public class NegativeLoginTest extends TestBase {
         extentLogger.info("Login to application");
         pages.chooseERP().rightERP.click();
         Thread.sleep(4000);
-        pages.login().login(ConfigurationReader.getProperty("wrongusername"), ConfigurationReader.getProperty("password"));
+        pages.login().username.sendKeys("Wrongusername");
+        pages.login().password.sendKeys(ConfigurationReader.getProperty("password"));
         extentLogger.info("Verifying alert");
         Thread.sleep(6000);
         String alert1= pages.purchasesMain().WrongCredentialsAlert.getText();

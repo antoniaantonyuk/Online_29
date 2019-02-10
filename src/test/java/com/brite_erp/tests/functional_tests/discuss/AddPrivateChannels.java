@@ -20,7 +20,7 @@ public class AddPrivateChannels extends TestBase {
 
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Private Channel creation and removing");
         extentLogger.info("Create new Channel");
         pages.discussPage().addPrivateChannelPlusButton.click();
@@ -56,7 +56,7 @@ public class AddPrivateChannels extends TestBase {
 
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Invitation to Private Channel other users");
 
         pages.discussPage().addPrivateChannelPlusButton.click();
@@ -74,8 +74,7 @@ public class AddPrivateChannels extends TestBase {
         pages.discussPage().avatar.click();
         pages.discussPage().logOut.click();
 
-        pages.login().login(ConfigurationReader.getProperty("username2"), ConfigurationReader.getProperty("password2"));
-        Assert.assertTrue(pages.discussPage().privateChannelNameNewInvitation.isDisplayed());
+        pages.login().login();        Assert.assertTrue(pages.discussPage().privateChannelNameNewInvitation.isDisplayed());
         extentLogger.info("Logged in as a new user");
 
         pages.discussPage().deletePrivateChannelXButton.click();
@@ -83,8 +82,7 @@ public class AddPrivateChannels extends TestBase {
         Thread.sleep(5000);
         pages.discussPage().avatar.click();
         pages.discussPage().logOut.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
-        pages.discussPage().deletePrivateChannelXButton.click();
+        pages.login().login();        pages.discussPage().deletePrivateChannelXButton.click();
 
 
     }
@@ -92,7 +90,7 @@ public class AddPrivateChannels extends TestBase {
     @Test
     public void checkMessageInPrivateChannel() throws InterruptedException {
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Invitation to Private Channel other users");
 
         pages.discussPage().addPrivateChannelPlusButton.click();
@@ -109,7 +107,7 @@ public class AddPrivateChannels extends TestBase {
         pages.discussPage().avatar.click();
         pages.discussPage().logOut.click();
 
-        pages.login().login(ConfigurationReader.getProperty("username2"), ConfigurationReader.getProperty("password2"));
+        pages.login().login();
         Assert.assertTrue(pages.discussPage().privateChannelNameNewInvitation.isDisplayed());
         extentLogger.info("Logged in as a new user");
 
@@ -130,8 +128,7 @@ public class AddPrivateChannels extends TestBase {
 
 
 
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
-        pages.discussPage().privateChannelNameNewInvitation.click();
+        pages.login().login();        pages.discussPage().privateChannelNameNewInvitation.click();
         Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Welcome new user to our Private Channel')]")).isDisplayed());
         extentLogger.info("Old user asserted old message");
 

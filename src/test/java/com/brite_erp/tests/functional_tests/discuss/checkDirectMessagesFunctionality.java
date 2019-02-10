@@ -16,7 +16,7 @@ public class checkDirectMessagesFunctionality extends TestBase {
 
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Add other user or manager to Direct message list and deleted");
         extentLogger.info("Add other user to the list");
         pages.discussPage().addDirectMessagePlusButton.click();
@@ -51,7 +51,7 @@ public class checkDirectMessagesFunctionality extends TestBase {
     public void SendDirectMessages() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Add other user or manager to Direct message list and deleted");
         extentLogger.info("Add other user to the list");
         pages.discussPage().addDirectMessagePlusButton.click();
@@ -80,7 +80,7 @@ public class checkDirectMessagesFunctionality extends TestBase {
     public void MessageMarkedWithStar() throws InterruptedException {
 
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Mark the text message with star mark and remove star mark");
         extentLogger.info("Add star mark");
         pages.discussPage().addDirectMessagePlusButton.click();

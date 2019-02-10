@@ -17,7 +17,7 @@ public class Products extends TestBase {
     public void addMessage() throws InterruptedException {
         //Selecting Iphone8 and adding a message under the product. Then verify that the message added successfully.
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();
@@ -43,7 +43,7 @@ public class Products extends TestBase {
     public void updateQuantity() throws InterruptedException {
         //Selecting Datacard and updating quantity on hand. Then verify that the quantity is updated.
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check the Title Name");
         extentLogger.info("Open Purchases Module");
         pages.purchasesMain().purchaseInMenu.click();
@@ -80,8 +80,8 @@ public class Products extends TestBase {
         public void printAProductDetails() throws InterruptedException{
             //Select Apple watch series 3 and confirm the label to print.
                 pages.chooseERP().rightERP.click();
-                pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
-                extentLogger = report.createTest("Check the Title Name");
+            pages.login().login();
+            extentLogger = report.createTest("Check the Title Name");
                 extentLogger.info("Open Purchases Module");
                 pages.purchasesMain().purchaseInMenu.click();
                 Thread.sleep(15000);

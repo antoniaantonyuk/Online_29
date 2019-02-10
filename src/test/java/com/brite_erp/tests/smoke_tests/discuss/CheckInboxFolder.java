@@ -11,7 +11,7 @@ public class CheckInboxFolder extends TestBase {
     @Test
     public void CheckIfInboxExist() {
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check If Inbox Link is Exist");
         extentLogger.info("Find Inbox");
         Assert.assertTrue(pages.discussPage().inboxLink.isDisplayed());
@@ -21,7 +21,7 @@ public class CheckInboxFolder extends TestBase {
     @Test
     public void InboxIsCkickable(){
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check If Inbox Link is Clickable");
         extentLogger.info("Click on Inbox");
         pages.discussPage().inboxLink.click();
@@ -31,7 +31,7 @@ public class CheckInboxFolder extends TestBase {
     @Test
     public  void CheckInboxTitle(){
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger = report.createTest("Check If Inbox Page Title is #Inbox");
         extentLogger.info("Click on Inbox");
         pages.discussPage().inboxLink.click();

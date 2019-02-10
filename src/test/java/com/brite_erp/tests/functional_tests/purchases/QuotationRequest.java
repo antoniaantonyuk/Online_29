@@ -16,7 +16,7 @@ public class QuotationRequest extends TestBase {
     {
         pages.chooseERP().rightERP.click();
 
-        pages.login().login1();//gin(ConfigurationReader.getProperty("username"),
+        pages.login().login();//gin(ConfigurationReader.getProperty("username"),
               //  ConfigurationReader.getProperty("password"));
         pages.quotationRequest().PurchasesTab.click();//urchasesMain().titlePurchasePage.click();
 
