@@ -22,10 +22,11 @@ public class LoginPage extends Menu {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
 
-    public void login(String usr, String pass){
-        username.sendKeys(usr);
-        password.sendKeys(pass);
-        //String BriteErpDepo=Driver.getDriver().findElement(By.id("db")).;
+
+
+    public void login(){
+        username.sendKeys(ConfigurationReader.getProperty("username"));
+        password.sendKeys(ConfigurationReader.getProperty("password"));
         loginButton.click();
     }
 

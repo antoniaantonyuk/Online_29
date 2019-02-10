@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.File;
 import java.util.List;
 
 public class QuotationRequest {
@@ -56,5 +57,19 @@ public class QuotationRequest {
     {
         Driver.getDriver().findElement(By.xpath("//table//tbody//tr["+row+"]//td[1]")).click();
         return Driver.getDriver().findElement(By.xpath("//table//tbody//tr["+row+"]//td[7]"));
+    }
+
+    public boolean isFileDownloaded(String downloadPath, String fileName) {
+        File dir = new File(downloadPath);
+        File[] dirContents = dir.listFiles();
+
+        for (int i = 0; i < dirContents.length; i++) {
+            if (dirContents[i].getName().contains(fileName)) {
+                // File has been found, it can now be deleted:
+                //dirContents[i].delete();
+                return true;
+            }
+        }
+        return false;
     }
 }

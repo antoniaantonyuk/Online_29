@@ -16,7 +16,7 @@ public class PositiveLogInTest extends TestBase {
         extentLogger.info("Login to application");
         pages.chooseERP().rightERP.click();
         Thread.sleep(4000);
-        pages.login().login(ConfigurationReader.getProperty("username"),ConfigurationReader.getProperty("password"));
+        pages.login().login();
         extentLogger.info("Verifying url");
         Thread.sleep(6000);
         assertEquals(Driver.getDriver().getTitle(), ApplicationConstants.APPLICATION_TITLE);

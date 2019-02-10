@@ -10,6 +10,7 @@ public class Pages {
     private CreateChannelPage createChannelPage;
     private DirectMessagePage directMessagePage ;
 
+private Vendors vendors;
 private QuotationRequest quotationRequest;
 private BrowserUtils browserUtils;
 
@@ -64,6 +65,13 @@ public BrowserUtils browserUtils()
             quotationRequest = new QuotationRequest();
         }
         return quotationRequest;
+    }
+
+    public Vendors vendors() {
+        if (vendors == null) {
+            vendors = new Vendors();
+        }
+        return vendors;
     }
 
 }
