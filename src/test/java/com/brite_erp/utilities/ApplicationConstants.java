@@ -28,8 +28,9 @@ public class ApplicationConstants {
 
     public static final String CHANNELS_TITLE= "Public Channels - Odoo";
 
+    public static final String MESSAGE_TO_IPHONE8 = "50% discount";
+
     public  static  final String OTHER_USER= "Demo User";
 
-
-
+    public static final String APPLE_TITLE = "Apple watch series 3";
 }

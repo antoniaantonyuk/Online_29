@@ -35,4 +35,45 @@ public class PurchasesMain extends Menu {
 
     @FindBy(xpath = "//p[@class='alert alert-danger']")
     public WebElement WrongCredentialsAlert;
+
+    @FindBy (xpath = "//span[.='iphone 8']")
+    public WebElement Ipone8;
+
+    @FindBy (xpath = "//button[@title='Send a message']")
+    public WebElement addAMessage;
+
+    @FindBy (xpath = "//textarea")
+    public WebElement typingBox;
+
+    @FindBy (xpath = "//button[@tabindex='3']")
+    public WebElement messageButton;
+
+    @FindBy (xpath = "(//div[@class='oe_kanban_details'])[42]")
+    public WebElement datacard;
+
+    @FindBy (xpath = "//button[@class='btn btn-sm btn-default']")
+    public WebElement updateQuantityButton;
+
+    @FindBy (xpath = "//input[@name='new_quantity']")
+    public WebElement enterNewQuantity;
+
+    @FindBy (xpath = "//span[.='Apply']")
+    public WebElement applyButtonenterQua;
+
+    @FindBy (xpath = "(//span[@class='o_stat_value'])[3]")
+    public WebElement updatedQuantity;
+
+
+    @FindBy(xpath = "(//div[@class='oe_kanban_global_click o_kanban_record'])[21]")
+    public WebElement appleWatch3;
+
+    @FindBy (xpath = "//button[@data-toggle='dropdown']")
+    public WebElement printButton;
+
+    @FindBy(xpath = "//a[@data-section='print']")
+    public WebElement printLabelButton;
+
+    @FindBy(xpath = "//td[@class='col-xs-8 danger']")
+    public WebElement appleTitle;
+
 }
