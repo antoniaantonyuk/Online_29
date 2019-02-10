@@ -20,7 +20,7 @@ public class NegativeLoginTest extends TestBase {
         Thread.sleep(4000);
         pages.login().username.sendKeys(ConfigurationReader.getProperty("username"));
         pages.login().password.sendKeys("wrong");
-
+        pages.login().loginButton.click();
         extentLogger.info("Verifying alert");
         Thread.sleep(6000);
         String alert1= pages.purchasesMain().WrongCredentialsAlert.getText();
@@ -38,6 +38,7 @@ public class NegativeLoginTest extends TestBase {
         Thread.sleep(4000);
         pages.login().username.sendKeys("Wrongusername");
         pages.login().password.sendKeys(ConfigurationReader.getProperty("password"));
+        pages.login().loginButton.click();
         extentLogger.info("Verifying alert");
         Thread.sleep(6000);
         String alert1= pages.purchasesMain().WrongCredentialsAlert.getText();
