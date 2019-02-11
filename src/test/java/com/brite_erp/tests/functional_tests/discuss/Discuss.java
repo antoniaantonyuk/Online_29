@@ -26,7 +26,7 @@ public class Discuss extends TestBase{
     @Test
     public void checkDirectMessageFunctionality() throws Exception{
         pages.chooseERP().rightERP.click();
-        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        pages.login().login();
         Thread.sleep(3000);
         pages.directMessagePage().dmAddIcon.click();
         pages.directMessagePage().dmInputBox.sendKeys("InventoryManager5");
