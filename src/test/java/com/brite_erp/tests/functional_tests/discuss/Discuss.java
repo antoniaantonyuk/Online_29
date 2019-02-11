@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Discuss extends TestBase{
 
-    @Test
+    @Test(enabled = false)
     public void checkCreateChannel() throws Exception{
         pages.chooseERP().rightERP.click();
         pages.login().login();
@@ -21,5 +21,19 @@ public class Discuss extends TestBase{
         pages.createChannelPage().saveBtn.click();
         Thread.sleep(5000);
         Assert.assertTrue(pages.createChannelPage().channelName.getText().equals("AutomationTest1"));
+    }
+
+    @Test
+    public void checkDirectMessageFunctionality() throws Exception{
+        pages.chooseERP().rightERP.click();
+        pages.login().login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        Thread.sleep(3000);
+        pages.directMessagePage().dmAddIcon.click();
+        pages.directMessagePage().dmInputBox.sendKeys("InventoryManager5");
+        Thread.sleep(3000);
+        pages.directMessagePage().dmDropDownList.click();
+        Assert.assertTrue(pages.directMessagePage().chatSection.isDisplayed());
+        Thread.sleep(3000);
+
     }
 }

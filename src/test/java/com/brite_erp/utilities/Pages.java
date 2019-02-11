@@ -8,6 +8,7 @@ public class Pages {
     private DiscussPage discussPage;
     private PurchasesMain purchasesMain;
     private CreateChannelPage createChannelPage;
+    private DirectMessagePage directMessagePage ;
 
 private Vendors vendors;
 private QuotationRequest quotationRequest;
@@ -39,6 +40,13 @@ public BrowserUtils browserUtils()
             createChannelPage = new CreateChannelPage();
         }
         return createChannelPage;
+    }
+
+    public DirectMessagePage directMessagePage() {
+        if (directMessagePage == null) {
+            directMessagePage = new DirectMessagePage();
+        }
+        return directMessagePage;
     }
     public DiscussPage discussPage() {
         if (discussPage == null) {

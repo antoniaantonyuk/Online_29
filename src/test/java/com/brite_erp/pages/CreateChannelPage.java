@@ -29,6 +29,19 @@ public class CreateChannelPage {
     @FindBy(xpath = "//button[contains(text(),'Save')]")
     public WebElement saveBtn;
 
+    @FindBy(xpath="//span[@data-type=\"dm\"]")
+    public WebElement dmAddIcon;
+
+    @FindBy(xpath="//div[@data-type='dm']/input")
+    public WebElement dmInputBox;
+
+    @FindBy(xpath = "//li[@class='ui-menu-item']/a")
+    public WebElement dmDropDownList;
+
+    @FindBy(xpath = "//div[@class='o_mail_chat_content']")
+    public WebElement chatSection;
+
+
 
 
 
